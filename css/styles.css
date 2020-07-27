@@ -1,0 +1,185 @@
+/* General */
+
+.wrapper {
+  margin: 30px 20px;
+}
+
+body {
+  background-color: #FCFCFC;
+  color: #94999D;
+}
+
+/* Typography */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #4B4B4B;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #4B4B4B;
+}
+
+p {
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
+
+/* Grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 15px;
+  margin-top: 30px;
+}
+
+/* Cards */
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  padding: 25px;
+  border: 2px solid #DFDFDF;
+  border-radius: 10px;
+}
+
+.avatar {
+  height: 75px;
+  border-radius: 50%;
+}
+
+.card .text-container {
+  margin-left: 18px;
+}
+
+/* Search */
+
+.search {
+  margin-top: 30px;
+}
+
+.search-input {
+  padding: 10px;
+  background-color: #DFDFDF;
+  border: none;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+/* Modal Window Overlay */
+
+body {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 80%;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #DFDFDF;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-content .avatar {
+  height: 140px;
+}
+
+.modal-content .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content p {
+  margin: 16px 0;
+}
+
+.modal-content hr {
+  border: 1px solid #DFDFDF;
+  margin: 30px 0;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 2em;
+}
+
+.left-arrow, .right-arrow {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.6em;
+  color: #DFDFDF;
+}
+
+.left-arrow {
+  margin-right: 20px;
+}
+
+.right-arrow {
+  margin-left: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    margin: 50px 50px 60px 50px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 32px 26px;
+  }
+
+  .search {
+    margin-top: 50px;
+  }
+
+  .avatar {
+    height: 110px;
+  }
+
+  .modal {
+    width: 375px;
+  }
+
+}
